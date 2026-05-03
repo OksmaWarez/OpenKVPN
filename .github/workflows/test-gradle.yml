@@ -31,4 +31,4 @@ jobs:
           name: AntiVPN-Universal
           path: build/libs/AntiVPN-*-universal.jar
       - name: Test
-        run: gradle test --no-daemon
+        run: gradle test --no-daemon --parallel
