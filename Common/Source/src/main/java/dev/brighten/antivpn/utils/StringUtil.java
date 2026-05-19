@@ -33,7 +33,7 @@ public class StringUtil {
         '&',
         input
             .replace("%player%", player.getName())
-            .replace("%reason%", result.getMethod())
+            // .replace("%reason%", result.getMethod())
             .replace("%country%", result.getCountry())
             .replace("%city%", result.getCity()));
   }

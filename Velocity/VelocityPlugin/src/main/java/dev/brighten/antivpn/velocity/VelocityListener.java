@@ -90,11 +90,7 @@ public class VelocityListener extends VPNExecutor {
       case DENIED_PROXY -> {
         VelocityPlugin.INSTANCE
             .getLogger()
-            .info(
-                event.getPlayer().getUsername()
-                    + " joined on a VPN/Proxy ("
-                    + result.response().getMethod()
-                    + ")");
+            .info(event.getPlayer().getUsername() + " joined on a VPN/Proxy");
         event.setResult(
             ResultedEvent.ComponentResult.denied(
                 LegacyComponentSerializer.builder()

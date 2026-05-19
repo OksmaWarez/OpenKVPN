@@ -131,7 +131,7 @@ public class H2VPN implements VPNDatabase {
             .append(toCache.getCountryCode())
             .append(toCache.getCity())
             .append(toCache.getTimezone())
-            .append(toCache.getMethod())
+            // .append(toCache.getMethod())
             .append(toCache.getIsp())
             .append(toCache.isProxy())
             .append(toCache.isHosting())

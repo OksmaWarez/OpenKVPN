@@ -89,8 +89,7 @@ public class LookupCommand extends Command {
               executor.sendMessage(
                   "&6&l" + player.get().getName() + "&7&l's Connection Information");
               executor.sendMessage("");
-              executor.sendMessage(
-                  "&e%s&8: &f%s", "Proxy", result.isProxy() ? "&a" + result.getMethod() : "&cNo");
+              executor.sendMessage("&e%s&8: &f%s", "Proxy", result.isProxy() ? "&aYes" : "&cNo");
               executor.sendMessage(
                   "&e%s&8: &f%s", "Hosting", result.isHosting() ? "&aYes" : "&cNo");
               executor.sendMessage("&e%s&8: &f%s", "ISP", result.getIsp());

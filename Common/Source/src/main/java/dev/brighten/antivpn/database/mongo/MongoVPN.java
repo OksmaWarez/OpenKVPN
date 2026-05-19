@@ -123,7 +123,7 @@ public class MongoVPN implements VPNDatabase {
       rdoc.put("countryCode", toCache.getCountryCode());
       rdoc.put("city", toCache.getCity());
       rdoc.put("isp", toCache.getIsp());
-      rdoc.put("method", toCache.getMethod());
+      // rdoc.put("method", toCache.getMethod());
       rdoc.put("timeZone", toCache.getTimezone());
       rdoc.put("proxy", toCache.isProxy());
       rdoc.put("hosting", toCache.isHosting());
