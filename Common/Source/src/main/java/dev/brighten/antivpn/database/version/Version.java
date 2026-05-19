@@ -19,6 +19,7 @@ package dev.brighten.antivpn.database.version;
 import dev.brighten.antivpn.database.DatabaseException;
 import dev.brighten.antivpn.database.local.H2VPN;
 import dev.brighten.antivpn.database.local.version.First;
+import dev.brighten.antivpn.database.local.version.Fourth;
 import dev.brighten.antivpn.database.local.version.Second;
 import dev.brighten.antivpn.database.local.version.Third;
 import dev.brighten.antivpn.database.mongo.MongoVPN;
@@ -37,6 +38,8 @@ public interface Version<DB> {
 
   Version<MongoVPN>[] mongoDbVersions =
       new Version[] {new MongoFirst(), new MongoSecond(), new MongoThird()};
-  Version<MySqlVPN>[] mysqlVersions = new Version[] {new MySQLFirst(), new Second(), new Third()};
-  Version<H2VPN>[] h2Versions = new Version[] {new First(), new Second(), new Third()};
+  Version<MySqlVPN>[] mysqlVersions =
+      new Version[] {new MySQLFirst(), new Second(), new Third(), new Fourth()};
+  Version<H2VPN>[] h2Versions =
+      new Version[] {new First(), new Second(), new Third(), new Fourth()};
 }
